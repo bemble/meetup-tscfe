@@ -2,9 +2,11 @@ var assert = require('assert');
 var DateUtils = require('./DateUtils');
 var Personne = require('./Personne');
 
+var backupGetDateDuJour = null;
+
 describe('classe Personne', () => {
-  var backupGetDateDuJour = DateUtils.getDateDuJour;
   before(() => {
+    backupGetDateDuJour = DateUtils.getDateDuJour;
     DateUtils.getDateDuJour = () => {
       return new Date('2000-01-01');
     };
