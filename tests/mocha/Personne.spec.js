@@ -7,6 +7,7 @@ var backupGetDateDuJour = null;
 describe('classe Personne', () => {
   before(() => {
     backupGetDateDuJour = DateUtils.getDateDuJour;
+    // Stub de la date du jour
     DateUtils.getDateDuJour = () => {
       return new Date('2000-01-01');
     };

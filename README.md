@@ -8,12 +8,14 @@ Les quelques slides sont disponible sur [Google Drive](https://docs.google.com/p
 
 Dans le dossier de la playground, `npm install` et les environnements sont prêt à l'emploi.
 
-Pour exécuter tout la batterie de tests, un simple `npm test` suffit.
+Pour exécuter toute la batterie de tests, exécutez `npm test`, ou :
+
+- `npm run mocha`
+- `npm run karma`
 
 ## Notes
 
-En temps normal, vous n'avez pas à utiliser `run.js`.
-Le plus simple est d'utiliser un task runner comme `gulp` ou `grunt`, ou d'utiliser directement les outils :
+En temps normal, on exécuterait les tests comme ceci :
 
 - installer `mocha` en global (`npm install -g mocha`) et lancer `mocha tests/mocha/**/*.spec.js`
 - installer `karma-cli` en global et utiliser `karma start tests/karma.conf.js`
