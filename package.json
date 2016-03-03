@@ -4,10 +4,11 @@
   "description": "Playground pour la présentation \"Tester son code front-end\".",
   "scripts": {
     "postinstall": "node_modules/.bin/webdriver-manager update",
-    "test": "npm run mocha && npm run karma && npm run protractor",
+    "test": "npm run mocha && npm run karma && npm run protractor && npm run quixote",
     "mocha": "node_modules/.bin/mocha tests/mocha/**/*.js",
     "karma": "node_modules/.bin/karma start tests/karma.conf.js",
-    "protractor": "node_modules/.bin/protractor tests/protractor.conf.js"
+    "protractor": "node_modules/.bin/protractor tests/protractor.conf.js",
+    "quixote": "node_modules/.bin/karma start tests/quixote.conf.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.7",
     "mocha": "^2.4.5",
-    "protractor": "^3.1.1"
+    "protractor": "^3.1.1",
+    "quixote": "^0.11.0"
   }
 }
