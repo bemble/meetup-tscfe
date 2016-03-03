@@ -12,10 +12,12 @@ Pour exécuter toute la batterie de tests, exécutez `npm test`, ou :
 
 - `npm run mocha`
 - `npm run karma`
+- `npm run protractor`
 
 ## Notes
 
 En temps normal, on exécuterait les tests comme ceci :
 
 - installer `mocha` en global (`npm install -g mocha`) et lancer `mocha tests/mocha/**/*.spec.js`
-- installer `karma-cli` en global et utiliser `karma start tests/karma.conf.js`
+- installer `karma-cli` en global et lancer `karma start tests/karma.conf.js`
+- installer `protractor` en global, mettre à jour webdriver `webdriver-manager update` et lancer `protractor`
