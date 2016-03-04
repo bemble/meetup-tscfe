@@ -9,11 +9,12 @@ describe('google', () => {
   });
 
   it('affiche des résultats de recherche lorsque l\'on entre une donnée dans un champs', () => {
+    // arrange
     var rechercheInput = element(by.id('lst-ib'));
-
+    // act
     rechercheInput.sendKeys('pierrecle').sendKeys(protractor.Key.ENTER);
     browser.sleep(300);
-
+    // assert
     var res = element(by.id('res'));
     expect(res.isPresent()).toBe(true);
   });
