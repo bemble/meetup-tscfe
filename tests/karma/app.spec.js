@@ -19,11 +19,12 @@ describe('class InfoApp', () => {
   });
 
   it('met la valeur du location.href dans l\'élement cible', () => {
+    // arrange
     var elt = InfoApp.getCible();
     var app = new InfoApp();
-
+    // act
     app.afficherLocation();
-
+    // assert
     expect(elt.innerHTML).toEqual(location.href);
   });
 });
